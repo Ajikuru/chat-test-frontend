@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
 //const socket = io('http://localhost:3001');
-const socket = io('ws:://chat-test-backend.vercel.app');
+const socket = io('ws://chat-test-backend.vercel.app');
 
 function App() {
     const [messages, setMessages] = useState<Array<string>>([]);
